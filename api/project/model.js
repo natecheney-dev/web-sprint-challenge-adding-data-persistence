@@ -1,6 +1,4 @@
 // build your `Project` model here
-
-const { get } = require('superagent')
 const db = require('../../data/dbConfig')
 
 async function getProjects() {
