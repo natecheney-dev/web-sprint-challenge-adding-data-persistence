@@ -18,7 +18,7 @@ router.post('/', async (req, res, next) => {
             project_id: project.project_id,
             project_name: project.project_name,
             project_description: project.project_description,
-            project_completed: project.project_completed === 0 ? false : true
+            project_completed: project.project_completed == 0 ? false : true
         })
     } catch (err) {
         next(err)
